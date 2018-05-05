@@ -26,7 +26,11 @@
         <activity
             android:name=".QuizActivity"
             android:label="@string/title_activity_quiz"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".JobEduActivity"
+            android:label="@string/title_activity_job_edu"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

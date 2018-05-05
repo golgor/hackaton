@@ -1,6 +1,5 @@
 package com.example.hackaton.hackaton;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -9,14 +8,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
-import static com.example.hackaton.hackaton.MainActivity.EXTRA_MESSAGE;
-
-public class StartProfileActivity extends AppCompatActivity {
+public class JobEduActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start_profile);
+        setContentView(R.layout.activity_job_edu);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -28,20 +25,8 @@ public class StartProfileActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
-        // Get the Intent that started this activity and extract the string
-        Intent intent = getIntent();
+        TextView textView = (TextView) findViewById(R.id.textView);
+        textView.setText(globalVariables.gender.toString());
     }
 
-    public void onClickMars(View view) {
-        Intent intent = new Intent(this, JobEduActivity.class);
-        globalVariables.gender = Gender.male;
-        startActivity(intent);
-    }
-
-    public void onClickVenus(View view) {
-        Intent intent = new Intent(this, JobEduActivity.class);
-        globalVariables.gender = Gender.female;
-        startActivity(intent);
-    }
 }
