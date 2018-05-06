@@ -34,13 +34,13 @@ public class StartProfileActivity extends AppCompatActivity {
     }
 
     public void onClickMars(View view) {
-        Intent intent = new Intent(this, JobEduActivity.class);
+        Intent intent = new Intent(this, ChoseGenderActivity.class);
         globalVariables.gender = Gender.male;
         startActivity(intent);
     }
 
     public void onClickVenus(View view) {
-        Intent intent = new Intent(this, JobEduActivity.class);
+        Intent intent = new Intent(this, ChoseGenderActivity.class);
         globalVariables.gender = Gender.female;
         startActivity(intent);
     }

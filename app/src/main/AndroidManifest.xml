@@ -30,7 +30,9 @@
         <activity
             android:name=".JobEduActivity"
             android:label="@string/title_activity_job_edu"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ChoseGenderActivity" />
+        <activity android:name=".SummaryProfileActivity"></activity>
     </application>
 
 </manifest>
