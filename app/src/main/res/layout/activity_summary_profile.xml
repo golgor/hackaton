@@ -4,63 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:context=".SummaryProfileActivity">
 
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/genderText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:onClick="sendMessage"
-        android:text="@string/ButtonText"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="44dp"
+        android:text="TextView"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.145" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editText"
+    <TextView
+        android:id="@+id/familyText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/editText_default"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="60dp"
+        android:text="TextView"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.233" />
+        app:layout_constraintTop_toBottomOf="@+id/genderText" />
 
-    <Button
-        android:id="@+id/button5"
+    <TextView
+        android:id="@+id/occupationText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:onClick="playQuiz"
-        android:text="Play Quiz now!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="60dp"
+        android:text="TextView"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.832" />
+        app:layout_constraintTop_toBottomOf="@+id/familyText" />
 
+    <TextView
+        android:id="@+id/countryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/occupationText" />
 </android.support.constraint.ConstraintLayout>

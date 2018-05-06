@@ -5,40 +5,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".StartProfileActivity"
-    tools:showIn="@layout/activity_start_profile">
+    tools:context=".JobEduActivity"
+    tools:showIn="@layout/activity_job_edu">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="168dp"
-        android:layout_height="135dp"
-        android:layout_marginBottom="8dp"
+        android:id="@+id/imageView6"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:onClick="onClickMars"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="52dp"
+        android:onClick="onClickJob"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.163"
-        app:srcCompat="@drawable/ic_mars_symbol" />
+        app:srcCompat="@drawable/ic_job" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="168dp"
-        android:layout_height="135dp"
+        android:id="@+id/imageView7"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="88dp"
-        android:onClick="onClickVenus"
+        android:layout_marginTop="52dp"
+        android:onClick="onClickEducation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:srcCompat="@drawable/ic_venus_symbol" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/ic_school" />
 
 </android.support.constraint.ConstraintLayout>

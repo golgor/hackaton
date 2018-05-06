@@ -27,10 +27,14 @@
             android:name=".QuizActivity"
             android:label="@string/title_activity_quiz"
             android:theme="@style/AppTheme.NoActionBar" />
-
+        <activity
+            android:name=".JobEduActivity"
+            android:label="@string/title_activity_job_edu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ChoseGenderActivity" />
+        <activity android:name=".SummaryProfileActivity"></activity>
         <activity android:name=".Quest"></activity>
         <activity android:name=".QuestInfo"></activity>
-
     </application>
 
 </manifest>

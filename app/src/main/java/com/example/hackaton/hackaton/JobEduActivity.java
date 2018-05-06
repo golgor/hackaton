@@ -7,16 +7,13 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.TextView;
 
-import static com.example.hackaton.hackaton.MainActivity.EXTRA_MESSAGE;
-
-public class StartProfileActivity extends AppCompatActivity {
+public class JobEduActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start_profile);
+        setContentView(R.layout.activity_job_edu);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -29,19 +26,16 @@ public class StartProfileActivity extends AppCompatActivity {
             }
         });
 
-        // Get the Intent that started this activity and extract the string
-        Intent intent = getIntent();
     }
-
-    public void onClickMars(View view) {
-        Intent intent = new Intent(this, ChoseGenderActivity.class);
-        globalVariables.gender = Gender.male;
+    public void onClickEducation(View view) {
+        Intent intent = new Intent(this, SummaryProfileActivity.class);
+        globalVariables.occupation = Occupation.education;
+        startActivity(intent);
+    }
+    public void onClickJob(View view) {
+        Intent intent = new Intent(this, SummaryProfileActivity.class);
+        globalVariables.occupation = Occupation.job;
         startActivity(intent);
     }
 
-    public void onClickVenus(View view) {
-        Intent intent = new Intent(this, ChoseGenderActivity.class);
-        globalVariables.gender = Gender.female;
-        startActivity(intent);
-    }
 }
