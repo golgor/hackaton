@@ -59,4 +59,9 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
+
+    public void playQuiz(View view) {
+        Intent intent = new Intent(this, Quest.class);
+        startActivity(intent);
+    }
 }
