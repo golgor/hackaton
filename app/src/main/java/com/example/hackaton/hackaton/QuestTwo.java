@@ -5,15 +5,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class Quest extends AppCompatActivity {
+public class QuestTwo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quest);
+        setContentView(R.layout.activity_quest_two);
     }
-    public void rightAnswer(View view) {
-        Intent intent = new Intent(this, QuestInfo.class);
+
+    public void lastQuestion(View view) {
+        Intent intent = new Intent(this, QuestInfoLast.class);
         startActivity(intent);
     }
+
 }

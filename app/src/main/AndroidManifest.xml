@@ -32,9 +32,15 @@
             android:label="@string/title_activity_job_edu"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ChoseGenderActivity" />
-        <activity android:name=".SummaryProfileActivity"></activity>
-        <activity android:name=".Quest"></activity>
-        <activity android:name=".QuestInfo"></activity>
+        <activity android:name=".SummaryProfileActivity" />
+        <activity android:name=".Quest" />
+        <activity android:name=".QuestInfo" />
+        <activity android:name=".QuestTwo" />
+        <activity
+            android:name=".QuestInfoTwo"
+            android:label="@string/title_activity_quest_info_two"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".QuestInfoLast"></activity>
     </application>
 
 </manifest>

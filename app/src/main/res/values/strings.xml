@@ -8,4 +8,5 @@
     <string name="title_activity_choose_job_edu">chooseJobEdu</string>
     <string name="title_activity_job_edu">JobEduActivity</string>
     <string name="btn_next_quest">Next Quest</string>
+    <string name="title_activity_quest_info_two">QuestInfoTwo</string>
 </resources>

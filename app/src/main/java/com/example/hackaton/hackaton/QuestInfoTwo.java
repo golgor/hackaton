@@ -1,20 +1,18 @@
 package com.example.hackaton.hackaton;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.Toast;
 
-public class JobEduActivity extends AppCompatActivity {
+public class QuestInfoTwo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_job_edu);
+        setContentView(R.layout.activity_quest_info_two);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -26,22 +24,6 @@ public class JobEduActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
-    }
-    public void onClickEducation(View view) {
-
-        Intent intent = new Intent(this, MainActivity.class);
-        globalVariables.occupation = Occupation.education;
-        Toast.makeText(this, "Your profile is created!",
-                Toast.LENGTH_LONG).show();
-        startActivity(intent);
-    }
-    public void onClickJob(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        globalVariables.occupation = Occupation.job;
-        Toast.makeText(this, "Your profile is created!",
-                Toast.LENGTH_LONG).show();
-        startActivity(intent);
     }
 
 }

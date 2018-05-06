@@ -9,7 +9,7 @@
     <View
         android:id="@+id/view"
         android:layout_width="339dp"
-        android:layout_height="495dp"
+        android:layout_height="486dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -21,22 +21,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="247dp"
-        android:layout_height="63dp"
+    <View
+        android:id="@+id/view2"
+        android:layout_width="343dp"
+        android:layout_height="483dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="#66C1BF"
-        android:text="C 100 - 300 SEK"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        android:layout_marginTop="16dp"
+        android:background="#E5F4FB"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText3"
@@ -46,12 +45,13 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:editable="false"
         android:ems="10"
         android:inputType="textMultiLine"
         android:singleLine="false"
-        android:text="If you feel sick and want to visit healtcare. How much does it cost? (approximately)"
+        android:text="If you feel sick and want to visit doctor. How much does it approximately cost?"
+        android:textColorLink="@android:color/black"
         android:textSize="24sp"
         android:typeface="normal"
         app:layout_constraintEnd_toEndOf="@+id/view"
@@ -70,6 +70,24 @@
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="247dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#66C1BF"
+        android:onClick="rightAnswer"
+        android:text="C 100 - 300 SEK"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <Button
         android:id="@+id/button2"
@@ -122,11 +140,28 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="#66C1BF"
-        android:text="C 100 - 300 SEK"
+        android:text="D     10 - 50 SEK"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="47dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018" />
 
 </android.support.constraint.ConstraintLayout>
