@@ -56,4 +56,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, StartProfileActivity.class);
         startActivity(intent);
     }
+
+    public void playQuiz(View view) {
+        Intent intent = new Intent(this, Quest.class);
+        startActivity(intent);
+    }
 }

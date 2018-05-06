@@ -33,6 +33,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ChoseGenderActivity" />
         <activity android:name=".SummaryProfileActivity"></activity>
+        <activity android:name=".Quest"></activity>
+        <activity android:name=".QuestInfo"></activity>
     </application>
 
 </manifest>
